@@ -5,6 +5,7 @@ function displayCart() {
     cartTableBody.innerHTML = ''; 
 
     cart.forEach(item => {
+        console.log("Image path:", `product/${item.image}`); 
         let row = `
             <tr>
                 <td>
