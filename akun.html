@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Bragam & co. | Terima Kasih</title>
+        <title>Bragam & co. | Masuk Akun</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
@@ -18,7 +18,7 @@
         <header class="header" id="header">
             <div class="header-top">
                 <div class="header-container">
-                    <a class="header-title" href="index.html">Bragam & co. | Terima Kasih</a>
+                    <a class="header-title" href="index.html">Bragam & co. | Masuk Akun</a>
                     <ul class="header-top-links">
                         <li><a href="#kontak">Dukung Kami</a></li>
                         |
@@ -68,117 +68,36 @@
             </div>
         </nav>
 
-        <section class="wishlist-content">
-            <h2>TERIMA KASIH TELAH BERBELANJA!</h2>
-            <p>Pembayaran anda berhasil!</p>
-            <p>Pesanan anda akan kami proses dan akan segera sampai ke rumah anda.</p>
-            <br>
-            <a href="index.html">Klik Untuk Kembali Ke Beranda</a>
-        </section>
+        <div class="login">
+            <div class="login-form">
+                <form action="">
+                    <h1>MASUK AKUN</h1>
+                    <p>
+                        Belum memiliki akun? Klik
+                        <a href="signup.html" style="font-weight: bold;">Daftar Akun</a>
+                    </p> 
 
-        <section class="wish-list">
-            <div class="wish-list-title">
-                <h1 style="font-size: 2rem;">KOLEKSI DARI KAMI</h2>
-                <p style="font-size: 1.3rem;">Koleksi Dari Kami Yang Mungkin Anda Sukai</p>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Masukkan Email" name="email" required />
+
+                    <label for="psw">Password</label>
+                    <input
+                        type="password"
+                        placeholder="Masukkan Password"
+                        name="psw"
+                        required
+                    />
+
+                    <p>
+                        Dengan masuk ke dalam akun, maka anda setuju dengan
+                        <a href="#syarat-ketentuan" style="font-weight: bold;">Syarat dan Ketentuan</a> Kami.
+                    </p>
+
+                    <button type="submit" class="login-btn" href="index.html">MASUK</button>
+                </form>
             </div>
-            <div class="wish-list-center">
-                <div class="wish-list-item">
-                    <div class="wish-list-img">
-                        <a href="#product" class="wish-list-view">
-                            <img src="product/boss-tuxedo.webp" alt="wish-list-img-1">
-                        </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" alt="wish-like-icon" style="width: 30px;">
-                        </span>
-                        <ul class="wish-list-info-btn">
-                            <a href="#produk" class="wish-list-btn">LIHAT PRODUK</a>
-                        </ul>
-                    </div>
-                    <div class="wish-list-info">
-                        <span>HUGO BOSS</span>
-                        <a href="#guess-collection">Virgin Wool | Tuxedo</a>
-                        <h4>IDR 3.295.500</h4>
-                    </div>
-                </div>
+        </div>
 
-                <div class="wish-list-item">
-                    <div class="wish-list-img">
-                        <a href="#product" class="wish-list-view">
-                            <img src="product/rm-watch.webp" alt="list-img-1">
-                        </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" alt="wish-like-icon" style="width: 30px;">
-                        </span>
-                        <ul class="wish-list-info-btn">
-                            <a href="#produk" class="wish-list-btn">LIHAT PRODUK</a>
-                        </ul>
-                    </div>
-                    <div class="wish-list-info">
-                        <span>RICHARD MILLE</span>
-                        <a href="#guess-collection">RM 35-02 | Red Luxehouze</a>
-                        <h4>IDR 64.489.700</h4>
-                    </div>
-                </div>
-
-                <div class="wish-list-item">
-                    <div class="wish-list-img">
-                        <a href="#product" class="wish-list-view">
-                            <img src="product/dr-martin.jpg" alt="wish-list-img-1">
-                        </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" alt="wish-like-icon" style="width: 30px;">
-                        </span>
-                        <ul class="wish-list-info-btn">
-                            <a href="#produk" class="wish-list-btn">LIHAT PRODUK</a>
-                        </ul>
-                    </div>
-                    <div class="wish-list-info">
-                        <span>DR. MARTENS</span>
-                        <a href="#guess-collection">Leather High Boots | Smooth Black</a>
-                        <h4>IDR 1.470.500</h4>
-                    </div>
-                </div>
-
-                <div class="wish-list-item">
-                    <div class="wish-list-img">
-                        <a href="#product" class="wish-list-view">
-                            <img src="product/rb-glass.jpg" alt="wish-list-img-1">
-                        </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" alt="wish-like-icon" style="width: 30px;">
-                        </span>
-                        <ul class="wish-list-info-btn">
-                            <a href="#produk" class="wish-list-btn">LIHAT PRODUK</a>
-                        </ul>
-                    </div>
-                    <div class="wish-list-info">
-                        <span>RAYBAN</span>
-                        <a href="#guess-collection">Black Cat Eye | Erica Pantos</a>
-                        <h4>IDR 1.414.900</h4>
-                    </div>
-                </div>
-
-                <div class="wish-list-item">
-                    <div class="wish-list-img">
-                        <a href="#product" class="wish-list-view">
-                            <img src="product/ana-pouch.jpg" alt="wish-list-img-1">
-                        </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" alt="wish-like-icon" style="width: 30px;">
-                        </span>
-                        <ul class="wish-list-info-btn">
-                            <a href="#produk" class="wish-list-btn">LIHAT PRODUK</a>
-                        </ul>
-                    </div>
-                    <div class="wish-list-info">
-                        <span>AXE & AWL</span>
-                        <a href="#rolex">Zipper Pouches | Leather</a>
-                        <h4>IDR 1.243.000</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <section class="contact" id="kontak"> 
             <div class="con"> 
                 <div class="con-content">
