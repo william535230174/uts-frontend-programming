@@ -287,11 +287,18 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 1.3rem;
+    padding: 20px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.7);
+    justify-self: center;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .wishlist-content a { 
     text-decoration: none;
-    color: black;
+    color: white;
     transition: all 0.5s ease-in-out;
 }
 
@@ -303,7 +310,7 @@ nav a:hover {
 .wishlist-items { 
     display: flex; 
     flex-wrap: wrap; 
-    gap: 10px; 
+    gap: 20px; 
     justify-content: center; 
     width: 100%; 
     max-width: 1200px; 
@@ -920,14 +927,14 @@ td img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:25px;
+    padding: 25px;
     min-height: 100vh;
     background: white;
 }
 
 .pay-container form{
-    padding:20px;
-    width:700px;
+    padding: 20px;
+    width: 700px;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
 }
@@ -935,21 +942,21 @@ td img {
 .pay-container form .pay-row{
     display: flex;
     flex-wrap: wrap;
-    gap:15px;
+    gap: 15px;
 }
 
 .pay-container form .pay-row .pay-col{
-    flex:1 1 250px;
+    flex: 1 1 250px;
 }
 
 .pay-container form .pay-row .pay-col .pay-title{
     font-size: 20px;
-    color:#333;
+    color: #333;
     padding-bottom: 5px;
 }
 
 .pay-container form .pay-row .pay-col .pay-inputBox{
-  margin:15px 0;
+    margin: 15px 0;
 }
 
 .pay-container form .pay-row .pay-col .pay-inputBox span{
@@ -959,19 +966,19 @@ td img {
 
 .pay-container form .pay-row .pay-col .pay-inputBox input{
     width: 100%;
-    border:1px solid #ccc;
-    padding:10px 15px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
     font-size: 15px;
     text-transform: none;
 }
 
 .pay-container form .pay-row .pay-col .pay-inputBox input:focus{
-    border:1px solid #000;
+    border: 1px solid #000;
 }
 
 .pay-container form .pay-row .pay-col .pay-flex{
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
 
 .pay-container form .pay-row .pay-col .pay-flex .pay-inputBox{

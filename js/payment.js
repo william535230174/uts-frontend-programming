@@ -10,7 +10,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
     inputs.forEach(function(input) {
         if (input.value.trim() === "") {
             allFilled = false;
-            input.style.border = "2px solid red"; 
+            input.style.border = "1px solid red"; 
         } else {
             input.style.border = ""; 
         }
