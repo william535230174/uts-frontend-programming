@@ -8,8 +8,9 @@ function addToCart (productName, price) {
     } else { 
         cart.push ({
             name: productName, 
-            price: price, 
-            quantity: 1
+            price: price,
+            image: image,  
+            quantity: 1 
         }); 
     }
 
