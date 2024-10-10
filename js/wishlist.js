@@ -20,7 +20,7 @@ function displayWishlist() {
     if (wishlist.length === 0) {
         wishlistContainer.innerHTML = 
         '<p>Wishlist Anda kosong, Anda dapat mencari produk favorit anda dan tambahkan ke dalam wishlist.</p>' + 
-        '<a href="koleksi.html" style="font-weight: bold;">Klik Untuk Temukan Favorit Anda</a>'; 
+        '<a href="koleksi.html" style="font-weight: bold; color:black;">Klik Untuk Temukan Favorit Anda</a>'; 
     } else {
         wishlist.forEach(item => {
             wishlistContainer.innerHTML += `

@@ -19,6 +19,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
     if (!allFilled) {
         errorMessage.style.display = "block"; 
     } else {
+        localStorage.removeItem('cart'); 
         window.location.href = "thank-you.html";
     }
 });

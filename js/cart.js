@@ -22,7 +22,6 @@ function displayCart() {
                 <td>${formatCurrency(item.price * item.quantity)}</td>
             </tr>
         `; 
-
         cartTableBody.innerHTML += row;
     });
 

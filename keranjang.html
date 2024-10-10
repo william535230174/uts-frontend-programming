@@ -18,7 +18,7 @@
         <header class="header" id="header">
             <div class="header-top">
                 <div class="header-container">
-                    <a class="header-title" href="index.html">Bragam & co. | Keranjang</a>
+                    <a class="header-title" href="keranjang.html">Bragam & co. | Keranjang</a>
                     <ul class="header-top-links">
                         <li><a href="#kontak">Dukung Kami</a></li>
                         |
@@ -53,7 +53,7 @@
 
             <div>
                 <ul class="nav-tools">
-                    <li><a href="#cari">
+                    <li><a>
                         <img src="https://img.icons8.com/?size=100&id=83218&format=png&color=FFFFFF" alt="search-logo" class="nav-icon" style=" width: 30%;">
                     </a></li>
 
@@ -79,13 +79,19 @@
                     </tr>
                 </thead>
                 <tbody>
-
                 </tbody>
             </table>
+            
             <div class="total-price">
                 <table>
                     <tr>
                         <td>Subtotal</td>
+                    </tr>
+                    <tr>
+                        <td>Pajak</td>
+                    </tr>
+                    <tr>
+                        <td>Total Harga</td>
                     </tr>
                 </table>
                 <a href="checkout.html" class="checkout-btn">CHECKOUT</a>
@@ -100,100 +106,95 @@
             <div class="wish-list-center">
                 <div class="wish-list-item">
                     <div class="wish-list-img">
-                        <a href="#product" class="list-view">
+                        <a class="list-view">
                             <img src="product/th-watch.webp" alt="list-img-1">
                         </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" 
-                            alt="like-icon" style="width: 30px;" onclick="addToWishlist('TAG HEUER', 'product/th-watch.webp', 56600000)">
-                        </span>
                         <ul class="wish-list-info-btn">
-                            <a href="jam-tangan.html" class="wish-list-btn">LIHAT PRODUK</a>
+                            <a class="wish-list-btn" 
+                            onclick="addToCart('TAG HEUER', 56600000, 'product/boss-tuxedo.webp')">
+                            TAMBAH KE KERANJANG
+                        </a>
                         </ul>
                     </div>
                     <div class="wish-list-info">
                         <span>TAG HEUER</span>
-                        <a href="#tag-heuer">Carrera Chronograph | Blue Dial Leather</a>
+                        <a>Carrera Chronograph | Blue Dial Leather</a>
                         <h4>IDR 56.600.000</h4>
                     </div>
                 </div>
 
                 <div class="wish-list-item">
                     <div class="wish-list-img">
-                        <a href="#product" class="list-view">
+                        <a class="list-view">
                             <img src="product/lv-glas.webp" alt="list-img-1">
                         </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" 
-                            alt="like-icon" style="width: 30px;" onclick="addToWishlist('LOUIS VUITTON', 'product/lv-glas.webp', 7031250)">
-                        </span>
                         <ul class="wish-list-info-btn">
-                            <a href="aksesoris.html" class="wish-list-btn">LIHAT PRODUK</a>
+                            <a class="wish-list-btn"
+                            onclick="addToCart('LOUIS VUITTON', 7031250, 'product/lv-glas.webp')">
+                                TAMBAH KE KERANJANG
+                            </a>
                         </ul>
                     </div>
                     <div class="wish-list-info">
                         <span>LOUIS VUITTON</span>
-                        <a href="#louis-vuitton">Attitude Square | Burgundy</a>
+                        <a>Attitude Square | Burgundy</a>
                         <h4>IDR 7.031.250</h4>
                     </div>
                 </div>
 
                 <div class="wish-list-item">
                     <div class="wish-list-img">
-                        <a href="#product" class="list-view">
+                        <a class="list-view">
                             <img src="product/gl-pouch.jpeg" alt="list-img-1">
                         </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" a
-                            lt="like-icon" style="width: 30px;" onclick="addToWishlist('GENUINE LEATHER', 'product/gl-pouch.jpeg', 460000)">
-                        </span>
                         <ul class="wish-list-info-btn">
-                            <a href="aksesoris.html" class="wish-list-btn">LIHAT PRODUK</a>
+                            <a class="wish-list-btn"
+                            onclick="addToCart('GENUINE LEATHER', 460000,'product/gl-pouch.jpeg')">
+                                TAMBAH KE KERANJANG
+                            </a>
                         </ul>
                     </div>
                     <div class="wish-list-info">
                         <span>GENUINE LEATHER</span>
-                        <a href="#genuine-leather">Premium Pouch | Brown Leather</a>
+                        <a>Premium Pouch | Brown Leather</a>
                         <h4>IDR 460.000</h4>
                     </div>
                 </div>
 
                 <div class="wish-list-item">
                     <div class="wish-list-img">
-                        <a href="#product" class="list-view">
+                        <a class="list-view">
                             <img src="product/sl-belt.webp" alt="list-img-1">
                         </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" 
-                            alt="like-icon" style="width: 30px;" onclick="addToWishlist('SYNTETIC LEATHER', 'product/sl-belt.webp', 519000)">
-                        </span>
                         <ul class="wish-list-info-btn">
-                            <a href="aksesoris.html" class="wish-list-btn">LIHAT PRODUK</a>
+                            <a class="wish-list-btn"
+                            onclick="addToCart('SYNTETIC LEATHER', 519000, 'product/sl-belt.webp')">
+                                TAMBAH KE KERANJANG
+                            </a>
                         </ul>
                     </div>
                     <div class="wish-list-info">
                         <span>SYNTETIC LEATHER</span>
-                        <a href="#syntetic-leather">Belt | Brown Leather</a>
+                        <a>Belt | Brown Leather</a>
                         <h4>IDR 519.000</h4>
                     </div>
                 </div>
 
                 <div class="wish-list-item">
                     <div class="wish-list-img">
-                        <a href="#product" class="list-view">
+                        <a class="list-view">
                             <img src="product/gst-jacket.webp" alt="list-img-1">
                         </a>
-                        <span class="wish-list-like">
-                            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=1A1A1A" 
-                            alt="like-icon" style="width: 30px;" onclick="addToWishlist('GST', 'product/gst-jacket.webp', 704000)">
-                        </span>
                         <ul class="wish-list-info-btn">
-                            <a href="pakaian.html" class="wish-list-btn">LIHAT PRODUK</a>
+                            <a class="wish-list-btn"
+                            onclick="addToCart('GST', 704000, 'product/gst-jacket.webp')"> 
+                                TAMBAH KE KERANJANG
+                            </a>
                         </ul>
                     </div>
                     <div class="wish-list-info">
                         <span>GST</span>
-                        <a href="#gst">Winter Jacket | Long Coat</a>
+                        <a>Winter Jacket | Long Coat</a>
                         <h4>IDR 704.000</h4>
                     </div>
                 </div>
@@ -272,16 +273,16 @@
             <div class="foot-link">
                 <div class="foot-links">
                     <h4>INFORMASI</h4>
-                    <a href="#tentang-kami">Tentang Kami</a>
-                    <a href="#hubungi-kami">Hubungi Kami</a>
-                    <a href="#syarat-ketentuan">Syarat & Ketentuan</a>
+                    <a>Tentang Kami</a>
+                    <a>Hubungi Kami</a>
+                    <a>Syarat & Ketentuan</a>
                 </div>
 
                 <div class="foot-links">
                     <h4>KEBUTUHAN ANDA</h4>
-                    <a href="#online-store">Online Store</a>
-                    <a href="#customer-service">Customer Service</a>
-                    <a href="#promosi">Promosi</a>
+                    <a>Online Store</a>
+                    <a>Customer Service</a>
+                    <a>Promosi</a>
                 </div>
             </div>
         </footer>

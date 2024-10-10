@@ -1,4 +1,4 @@
-function addToCart (productName, price, image) { 
+function addToCart (productName, price) { 
     let cart = JSON.parse(localStorage.getItem('cart')) || []; 
 
     let productIndex = cart.findIndex(item => item.name === productName); 
@@ -9,8 +9,7 @@ function addToCart (productName, price, image) {
         cart.push ({
             name: productName, 
             price: price, 
-            quantity: 1,
-            image: image
+            quantity: 1
         }); 
     }
 

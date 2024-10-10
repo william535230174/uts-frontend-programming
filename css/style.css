@@ -243,6 +243,11 @@ nav a:hover {
     transition: all 0.5s ease-in-out;
     margin: 20px;
     text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.7);
+    justify-self: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .cat-img { 
@@ -287,13 +292,8 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 1.3rem;
-    padding: 20px;
-    width: 90%;
     background: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,.7);
     justify-self: center;
-    margin: 0 auto;
-    margin-top: 2rem;
 }
 
 .wishlist-content a { 
@@ -325,6 +325,12 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.7);
+    justify-self: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 90%;
+    margin-bottom: 2rem;
 }
 
 .wish-list-like { 
@@ -413,14 +419,9 @@ nav a:hover {
     font-size: 1rem;
     display: block;
     margin-bottom: 1rem;
-    transition: all 0.5s ease-in-out;
     color: black;
     text-decoration: none;
-}
-
-.wish-list-info a:hover { 
-    color: grey;
-    transition: all 0.5s ease-in-out;
+    cursor: default;
 }
 
 .wish-list-info h4 { 
@@ -547,6 +548,7 @@ nav a:hover {
 
 .list-info { 
     margin-top: 10px;
+    cursor: default;
 }
 
 .list-info span {
@@ -560,19 +562,15 @@ nav a:hover {
     font-size: 1rem;
     display: block;
     margin-bottom: 1rem;
-    transition: all 0.5s ease-in-out;
     color: white;
     text-decoration: none;
-}
-
-.list-info a:hover { 
-    color: grey;
-    transition: all 0.5s ease-in-out;
+    cursor: default;
 }
 
 .list-info h4 { 
     font-size: 1rem;
     color: white; 
+    cursor: default;
 }
 
 .list-btn {
@@ -1050,6 +1048,7 @@ td img {
     color: black;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .login-form form p a:hover {
@@ -1065,6 +1064,7 @@ td img {
     margin-top: 1rem;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .login-btn:hover { 
