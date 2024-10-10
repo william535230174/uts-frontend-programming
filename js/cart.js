@@ -10,7 +10,7 @@ function displayCart() {
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="product/${item.image}" alt="product-image" style="width: 100px;">
+                        <img src="${item.image}" alt="product-image" style="width: 100px;">
                         <div>
                             <p>${item.name}</p>
                             <a href="javascript:void(0);" onclick="removeFromCart('${item.name}')">REMOVE</a>

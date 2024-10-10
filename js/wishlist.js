@@ -1,14 +1,14 @@
 function addToWishlist(name, image, price) {
-        console.log("Tombol like diklik!"); 
-        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    console.log("Tombol like diklik"); 
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-        const existingItem = wishlist.find(item => item.name === name);
-        if (!existingItem) {
-            wishlist.push({ name, image, price });
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-            alert('Produk ditambahkan ke wishlist!');
-        } else {
-            alert('Produk sudah ada di wishlist.');
+    const existingItem = wishlist.find(item => item.name === name);
+    if (!existingItem) {
+        wishlist.push({ name, image, price });
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        alert('Produk ditambahkan ke wishlist!');
+    } else {
+        alert('Produk sudah ada di wishlist.');
     }
 }
 
@@ -18,52 +18,60 @@ function displayWishlist() {
     wishlistContainer.innerHTML = ''; 
 
     if (wishlist.length === 0) {
-        wishlistContainer.innerHTML = '<p>Wishlist Anda Kosong.</p>';
+        wishlistContainer.innerHTML = '<p>Wishlist Anda kosong, Anda dapat mencari produk favorit anda dan tambahkan ke dalam wishlist.</p>';
     } else {
         wishlist.forEach(item => {
             wishlistContainer.innerHTML += `
-                <div class="wishlist-item">
-                    <img src="${item.image}" alt="${item.name}" style="width: 100px;">
-                    <p>${item.name}</p>
-                    <p>IDR ${item.price.toLocaleString('id-ID')}</p>
+            <div class="wish-list-item">
+                <div class="wish-list-img">
+                    <a href="#product" class="list-view">
+                        <img src="${item.image}" alt="list-img-1">
+                    </a>
+                    <span class="wish-list-like">
+                        <img src="https://img.icons8.com/?size=100&id=87397&format=png&color=000000" 
+                        alt="like-icon" style="width: 30px;" onclick="removeFromWishlist('${item.name}')"> 
+                    </span>
+                    <ul class="wish-list-info-btn">
+                        <a href="javascript:void(0);" class="wish-list-btn" onclick="addToCart('${item.name}', ${item.price}, '${item.image}')">TAMBAH KE KERANJANG</a>
+                    </ul>
                 </div>
+                <div class="wish-list-info">
+                    <span>${item.name}</span>
+                    <h4>IDR ${item.price.toLocaleString()}</h4>
+                </div>
+            </div>
             `;
         });
     }
 }
 
+function removeFromWishlist(productName) {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || []; 
+    wishlist = wishlist.filter(item => item.name !== productName); 
+    localStorage.setItem('wishlist', JSON.stringify(wishlist)); 
+    displayWishlist(); 
+}
 
-window.onload = displayWishlist;
+function addToCart(productName, price, image) { 
+    let cart = JSON.parse(localStorage.getItem('cart')) || []; 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const wishlistItems = []; 
-    const wishlistContent = document.getElementById('wishlist-content');
-    const wishlistContainer = document.getElementById('wishlist-items');
+    let productIndex = cart.findIndex(item => item.name === productName); 
 
-    function renderWishlist(items) {
-        wishlistContainer.innerHTML = '';
-
-        items.forEach(item => {
-            const itemHTML = `
-                <div class="wish-list-item">
-                    <div class="wish-list-img">
-                        <img src="${item.image}" alt="${item.name}">
-                    </div>
-                    <div class="wish-list-info">
-                        <span>${item.brand}</span>
-                        <a href="${item.link}">${item.description}</a>
-                        <h4>${item.price}</h4>
-                    </div>
-                </div>
-            `;
-            wishlistContainer.innerHTML += itemHTML;
-        });
+    if (productIndex > -1) { 
+        cart[productIndex].quantity += 1; 
+    } else { 
+        cart.push ({
+            name: productName, 
+            price: price, 
+            quantity: 1,
+            image: image 
+        }); 
     }
 
-    if (wishlistItems.length > 0) {
-        wishlistContent.style.display = 'none'; 
-        renderWishlist(wishlistItems); 
-    } else {
-        wishlistContent.style.display = 'block'; 
-    }
-});
+    localStorage.setItem('cart', JSON.stringify(cart)); 
+    alert(productName + " berhasil ditambahkan ke keranjang!");
+
+    removeFromWishlist(productName);
+}
+
+window.onload = displayWishlist; 
